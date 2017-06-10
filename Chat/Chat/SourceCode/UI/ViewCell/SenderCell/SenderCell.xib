@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="147" id="9os-bm-TXI" userLabel="Sender Cell" customClass="SenderCell" customModule="Chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9os-bm-TXI" id="cbB-5o-qxj">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="146.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hCE-sY-e8V">
+                        <rect key="frame" x="64" y="6" width="98" height="126.5"/>
+                        <color key="backgroundColor" red="0.50588235290000005" green="0.28532762709999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="TFu-dB-J93"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ju0-aO-VWT">
+                        <rect key="frame" x="69" y="6" width="88" height="126.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="K87-nA-QfT"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="maC-QP-pH4"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="sdfsdfsdfsdf">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="SFUIText-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                    </textView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E91-GC-aeB" customClass="RoundedImageView" customModule="Chat" customModuleProvider="target">
+                        <rect key="frame" x="10" y="6" width="44" height="44"/>
+                        <color key="backgroundColor" red="0.81176470590000005" green="0.32549019610000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="R6w-he-b8O"/>
+                            <constraint firstAttribute="width" constant="44" id="f9L-h9-ct6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16:06" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FK-5t-bjQ">
+                        <rect key="frame" x="170" y="117.5" width="32.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="top" secondItem="E91-GC-aeB" secondAttribute="top" constant="-6" id="0Fi-0a-3MI"/>
+                    <constraint firstItem="E91-GC-aeB" firstAttribute="leading" secondItem="cbB-5o-qxj" secondAttribute="leading" constant="10" id="C4G-Xf-5BO"/>
+                    <constraint firstItem="hCE-sY-e8V" firstAttribute="centerY" secondItem="Ju0-aO-VWT" secondAttribute="centerY" id="FgS-Ep-GAe"/>
+                    <constraint firstItem="Ju0-aO-VWT" firstAttribute="top" secondItem="cbB-5o-qxj" secondAttribute="top" constant="6" id="Fvb-IT-1lr"/>
+                    <constraint firstItem="hCE-sY-e8V" firstAttribute="height" secondItem="Ju0-aO-VWT" secondAttribute="height" id="Kna-V5-tdt"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ju0-aO-VWT" secondAttribute="bottom" constant="6" id="SPn-U1-m8S"/>
+                    <constraint firstItem="hCE-sY-e8V" firstAttribute="centerX" secondItem="Ju0-aO-VWT" secondAttribute="centerX" id="Uze-Fg-7Jn"/>
+                    <constraint firstItem="6FK-5t-bjQ" firstAttribute="leading" secondItem="hCE-sY-e8V" secondAttribute="trailing" constant="8" id="f6f-Eb-2og"/>
+                    <constraint firstItem="6FK-5t-bjQ" firstAttribute="bottom" secondItem="Ju0-aO-VWT" secondAttribute="bottom" id="gIx-YZ-XPu"/>
+                    <constraint firstItem="hCE-sY-e8V" firstAttribute="top" secondItem="E91-GC-aeB" secondAttribute="top" id="lN5-px-sGT"/>
+                    <constraint firstItem="hCE-sY-e8V" firstAttribute="leading" secondItem="E91-GC-aeB" secondAttribute="trailing" constant="10" id="uie-vW-HSO"/>
+                    <constraint firstItem="hCE-sY-e8V" firstAttribute="width" secondItem="Ju0-aO-VWT" secondAttribute="width" constant="10" id="yWu-4P-nUi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="hCE-sY-e8V" id="pOf-Wo-W4A"/>
+                <outlet property="messageTextView" destination="Ju0-aO-VWT" id="YEI-Ng-Hus"/>
+                <outlet property="photoImageView" destination="E91-GC-aeB" id="jcz-Lc-dlL"/>
+                <outlet property="timeLabel" destination="6FK-5t-bjQ" id="5Ya-TO-az7"/>
+            </connections>
+            <point key="canvasLocation" x="72.5" y="209.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (4.4.0)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - Kingfisher (3.10.1)
+  - ObjectMapper (2.2.7)
+  - Realm (2.8.0):
+    - Realm/Headers (= 2.8.0)
+  - Realm/Headers (2.8.0)
+  - RealmSwift (2.8.0):
+    - Realm (= 2.8.0)
+  - RxAlamofire (3.0.2):
+    - RxAlamofire/Core (= 3.0.2)
+  - RxAlamofire/Core (3.0.2):
+    - Alamofire (~> 4.0)
+    - RxSwift (~> 3.0)
+  - RxCocoa (3.5.0):
+    - RxSwift (~> 3.4)
+  - RxDataSources (1.0.3):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxRealm (0.6.0):
+    - RealmSwift (~> 2.5)
+    - RxSwift (~> 3.2)
+  - RxSwift (3.5.0)
+  - SWTableViewCell (0.3.7)
+
+DEPENDENCIES:
+  - AlamofireObjectMapper
+  - Kingfisher (~> 3.0)
+  - ObjectMapper
+  - Realm
+  - RealmSwift
+  - RxAlamofire
+  - RxCocoa (~> 3.0)
+  - RxDataSources (~> 1.0)
+  - RxRealm
+  - SWTableViewCell (~> 0.3.7)
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  Kingfisher: 33a1b82140fcb14a9fc13f78dfde2a03ff8de8cb
+  ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
+  Realm: 929243ad2b618b3232e70658bedc61110e7563f1
+  RealmSwift: 5b7079b891f2833d1849294161ba3e092bbda3f6
+  RxAlamofire: bc53604b29fd2d220cfaa490c736cc4500819f34
+  RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
+  RxDataSources: a021a0e944ba5f7991259829d973afdbfa719c0b
+  RxRealm: 323de579b50b5e0f4a3e087d5925021f976ffaf1
+  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+
+PODFILE CHECKSUM: bb06d7545a0365df35f47fa2682d92d141449cf9
+
+COCOAPODS: 1.1.1

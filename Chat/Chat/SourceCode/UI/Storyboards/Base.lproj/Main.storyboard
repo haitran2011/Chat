@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VBq-eT-RH5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QYZ-Q8-jPp">
+            <objects>
+                <navigationController id="VBq-eT-RH5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sxo-gn-Bvh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZrJ-YA-op7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-471" y="51"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="vbK-sF-9NV">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="75R-Qu-zkd" customClass="MainViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Vz-xD-Pyr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yzg-vY-w3l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BRX-jI-3ia">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eDx-Ro-kll">
+                                <rect key="frame" x="0.0" y="20" width="375" height="54"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9HH-y7-erg" customClass="DB2SegmentedControl" customModule="Chat" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="10" width="343" height="34"/>
+                                        <color key="backgroundColor" red="0.23529411759999999" green="0.4549019608" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="TME-A1-Klp"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="10" left="16" bottom="10" right="16"/>
+                            </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2R2-ti-jd7">
+                                <rect key="frame" x="0.0" y="74" width="375" height="593"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eDx-Ro-kll" secondAttribute="trailing" id="1VH-9c-EK9"/>
+                            <constraint firstItem="eDx-Ro-kll" firstAttribute="leading" secondItem="BRX-jI-3ia" secondAttribute="leading" id="2MF-CV-NRa"/>
+                            <constraint firstItem="eDx-Ro-kll" firstAttribute="top" secondItem="5Vz-xD-Pyr" secondAttribute="bottom" id="5VY-FY-JE2"/>
+                            <constraint firstAttribute="trailing" secondItem="2R2-ti-jd7" secondAttribute="trailing" id="UYn-JG-HL3"/>
+                            <constraint firstItem="2R2-ti-jd7" firstAttribute="leading" secondItem="BRX-jI-3ia" secondAttribute="leading" id="Wtj-JO-Ljr"/>
+                            <constraint firstItem="2R2-ti-jd7" firstAttribute="top" secondItem="eDx-Ro-kll" secondAttribute="bottom" id="XbZ-TA-WtF"/>
+                            <constraint firstItem="Yzg-vY-w3l" firstAttribute="top" secondItem="2R2-ti-jd7" secondAttribute="bottom" id="g0U-89-EiP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="r6Y-tj-Nfy"/>
+                    <connections>
+                        <outlet property="containerView" destination="2R2-ti-jd7" id="r0W-9F-6kv"/>
+                        <outlet property="segmentControl" destination="9HH-y7-erg" id="Sf5-5z-6u7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXL-Ib-fvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="51"/>
+        </scene>
+    </scenes>
+</document>

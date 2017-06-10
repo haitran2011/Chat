@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="YoU-6L-iVB">
+            <objects>
+                <viewController storyboardIdentifier="MessagesViewController" id="11u-CJ-zOE" customClass="MessagesViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hBw-Po-Rm6"/>
+                        <viewControllerLayoutGuide type="bottom" id="NQx-XD-Duc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZMx-1d-2x9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S3D-bu-gf0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="54"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWD-22-jVV" customClass="DB2SegmentedControl" customModule="Chat" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="10" width="343" height="34"/>
+                                        <color key="backgroundColor" red="0.23529411764705882" green="0.45490196078431372" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="iOM-8W-cVa"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="10" left="16" bottom="10" right="16"/>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7iC-IX-vJw">
+                                <rect key="frame" x="0.0" y="74" width="375" height="593"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7iC-IX-vJw" firstAttribute="top" secondItem="S3D-bu-gf0" secondAttribute="bottom" id="3F9-RQ-LgR"/>
+                            <constraint firstItem="S3D-bu-gf0" firstAttribute="top" secondItem="hBw-Po-Rm6" secondAttribute="bottom" id="KMa-R5-R8B"/>
+                            <constraint firstAttribute="trailing" secondItem="7iC-IX-vJw" secondAttribute="trailing" id="LLb-0W-5aX"/>
+                            <constraint firstItem="7iC-IX-vJw" firstAttribute="leading" secondItem="ZMx-1d-2x9" secondAttribute="leading" id="T3H-fB-OKT"/>
+                            <constraint firstAttribute="trailing" secondItem="S3D-bu-gf0" secondAttribute="trailing" id="eVx-4M-Xol"/>
+                            <constraint firstItem="S3D-bu-gf0" firstAttribute="leading" secondItem="ZMx-1d-2x9" secondAttribute="leading" id="kNc-om-iUT"/>
+                            <constraint firstItem="NQx-XD-Duc" firstAttribute="top" secondItem="7iC-IX-vJw" secondAttribute="bottom" id="taT-uM-dDt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="k8G-WT-aXF"/>
+                    <connections>
+                        <outlet property="segmentControl" destination="JWD-22-jVV" id="smV-Rl-ycY"/>
+                        <outlet property="tableView" destination="7iC-IX-vJw" id="hhH-N3-Ka2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wn3-B5-9mc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464.80000000000001" y="-66.11694152923539"/>
+        </scene>
+    </scenes>
+</document>
