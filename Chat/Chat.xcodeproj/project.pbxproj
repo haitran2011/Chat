@@ -23,6 +23,14 @@
 		F400FE2B1EE8A05300DC13DD /* Observable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F400FE2A1EE8A05300DC13DD /* Observable+Extension.swift */; };
 		F400FE311EE8ACE400DC13DD /* DB2ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F400FE301EE8ACE400DC13DD /* DB2ControlView.swift */; };
 		F403D1421EEAE0E90032F08E /* NetworkSaveChannelsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403D1411EEAE0E90032F08E /* NetworkSaveChannelsUseCase.swift */; };
+		F40F114B1EEDC33A0091A825 /* ChatsContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F114A1EEDC33A0091A825 /* ChatsContentType.swift */; };
+		F40F114D1EEDC3890091A825 /* DB2Message+ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F114C1EEDC3890091A825 /* DB2Message+ContentType.swift */; };
+		F40F114F1EEDC4BC0091A825 /* ChatsBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F114E1EEDC4BC0091A825 /* ChatsBaseCell.swift */; };
+		F40F11511EEDC4E50091A825 /* ChatsCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F11501EEDC4E50091A825 /* ChatsCellDelegate.swift */; };
+		F40F11531EEDC56F0091A825 /* ChatsViewController+CellEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F11521EEDC56F0091A825 /* ChatsViewController+CellEnums.swift */; };
+		F40F11551EEDC9770091A825 /* ChatContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F11541EEDC9770091A825 /* ChatContentType.swift */; };
+		F40F11571EEDC9AF0091A825 /* ChatBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F11561EEDC9AF0091A825 /* ChatBaseCell.swift */; };
+		F40F11591EEDC9CC0091A825 /* ChatCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F11581EEDC9CC0091A825 /* ChatCellDelegate.swift */; };
 		F4158C581EED80FC00B1040B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4158C571EED80FC00B1040B /* Constants.swift */; };
 		F41FFD241EE8205800500262 /* DB2Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FFD231EE8205800500262 /* DB2Channels.swift */; };
 		F41FFD261EE820A300500262 /* DB2Channels+Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FFD251EE820A300500262 /* DB2Channels+Mappable.swift */; };
@@ -136,6 +144,14 @@
 		F400FE2A1EE8A05300DC13DD /* Observable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Extension.swift"; sourceTree = "<group>"; };
 		F400FE301EE8ACE400DC13DD /* DB2ControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB2ControlView.swift; sourceTree = "<group>"; };
 		F403D1411EEAE0E90032F08E /* NetworkSaveChannelsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSaveChannelsUseCase.swift; sourceTree = "<group>"; };
+		F40F114A1EEDC33A0091A825 /* ChatsContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatsContentType.swift; path = ChatsContentType.swift; sourceTree = "<group>"; };
+		F40F114C1EEDC3890091A825 /* DB2Message+ContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DB2Message+ContentType.swift"; sourceTree = "<group>"; };
+		F40F114E1EEDC4BC0091A825 /* ChatsBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatsBaseCell.swift; path = ChatsBaseCell.swift; sourceTree = "<group>"; };
+		F40F11501EEDC4E50091A825 /* ChatsCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatsCellDelegate.swift; path = ChatsCellDelegate.swift; sourceTree = "<group>"; };
+		F40F11521EEDC56F0091A825 /* ChatsViewController+CellEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChatsViewController+CellEnums.swift"; path = "ChatsViewController+CellEnums.swift"; sourceTree = "<group>"; };
+		F40F11541EEDC9770091A825 /* ChatContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatContentType.swift; sourceTree = "<group>"; };
+		F40F11561EEDC9AF0091A825 /* ChatBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBaseCell.swift; sourceTree = "<group>"; };
+		F40F11581EEDC9CC0091A825 /* ChatCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCellDelegate.swift; sourceTree = "<group>"; };
 		F4158C571EED80FC00B1040B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F41FFD231EE8205800500262 /* DB2Channels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB2Channels.swift; sourceTree = "<group>"; };
 		F41FFD251EE820A300500262 /* DB2Channels+Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DB2Channels+Mappable.swift"; sourceTree = "<group>"; };
@@ -415,6 +431,9 @@
 		F4605BD51EE5F86C00ADCBBF /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				F40F11561EEDC9AF0091A825 /* ChatBaseCell.swift */,
+				F40F11581EEDC9CC0091A825 /* ChatCellDelegate.swift */,
+				F40F11541EEDC9770091A825 /* ChatContentType.swift */,
 				F43C33951EEBA8490074373C /* ChatViewController+ImagePicker.swift */,
 				F43C33901EEB9C9B0074373C /* ChatViewController+Keyboard.swift */,
 				F4777D3D1EEC6BE800D4CBF0 /* ChatViewController+SWTableView.swift */,
@@ -450,7 +469,11 @@
 		F4777D351EEC108800D4CBF0 /* Chats */ = {
 			isa = PBXGroup;
 			children = (
+				F40F114E1EEDC4BC0091A825 /* ChatsBaseCell.swift */,
+				F40F11501EEDC4E50091A825 /* ChatsCellDelegate.swift */,
+				F40F114A1EEDC33A0091A825 /* ChatsContentType.swift */,
 				F4777D3A1EEC142500D4CBF0 /* ChatsNavigator.swift */,
+				F40F11521EEDC56F0091A825 /* ChatsViewController+CellEnums.swift */,
 				F4777D331EEC0C0F00D4CBF0 /* ChatsViewController.swift */,
 				F4D83CC41EE72CD1003299D1 /* ChatsViewModel.swift */,
 				F4777D361EEC11E600D4CBF0 /* LiveChatViewController.swift */,
@@ -543,6 +566,7 @@
 				F4D83CF21EE73944003299D1 /* DB2Channel.swift */,
 				F41FFD231EE8205800500262 /* DB2Channels.swift */,
 				F4D83CAF1EE6E6E5003299D1 /* DB2LastMessage.swift */,
+				F40F114C1EEDC3890091A825 /* DB2Message+ContentType.swift */,
 				F4D83CB61EE6ED15003299D1 /* DB2Message.swift */,
 				F4D83CF91EE76479003299D1 /* DB2Messages.swift */,
 				F4D83CB11EE6E7CC003299D1 /* DB2Sender.swift */,
@@ -921,13 +945,17 @@
 			files = (
 				F4AF289C1EE86B47004ED75F /* UIFont+Extension.swift in Sources */,
 				F4D83CA11EE6E5B5003299D1 /* DB2Sender+Mappable.swift in Sources */,
+				F40F11511EEDC4E50091A825 /* ChatsCellDelegate.swift in Sources */,
 				F43CAE801EE87D2D00ED455D /* ChatViewController.swift in Sources */,
 				F4E04BFD1EEA85FF003F5D1E /* RDB2Users.swift in Sources */,
 				F400FE271EE89F5800DC13DD /* RealmRepresentable.swift in Sources */,
 				F400FE121EE886A200DC13DD /* UIView+Extension.swift in Sources */,
+				F40F11571EEDC9AF0091A825 /* ChatBaseCell.swift in Sources */,
 				F4E9490C1EE6178D006B139B /* MessageCell.swift in Sources */,
 				F4AF28A01EE875BE004ED75F /* SenderCell.swift in Sources */,
+				F40F114D1EEDC3890091A825 /* DB2Message+ContentType.swift in Sources */,
 				F43C33981EEBA8780074373C /* ChatViewController+TextField.swift in Sources */,
+				F40F114B1EEDC33A0091A825 /* ChatsContentType.swift in Sources */,
 				F4777D3B1EEC142500D4CBF0 /* ChatsNavigator.swift in Sources */,
 				F400FE201EE89E2900DC13DD /* RDB2Sender.swift in Sources */,
 				F400FE241EE89EE800DC13DD /* Repository.swift in Sources */,
@@ -939,6 +967,7 @@
 				F4D83C9F1EE6E5B5003299D1 /* DB2Channel+Mappable.swift in Sources */,
 				F403D1421EEAE0E90032F08E /* NetworkSaveChannelsUseCase.swift in Sources */,
 				F400FE221EE89EDE00DC13DD /* AbstractRepository.swift in Sources */,
+				F40F11591EEDC9CC0091A825 /* ChatCellDelegate.swift in Sources */,
 				F4D83CED1EE735E2003299D1 /* ChannelsNetwork.swift in Sources */,
 				F4D83CFA1EE76479003299D1 /* DB2Messages.swift in Sources */,
 				F4777D3E1EEC6BE800D4CBF0 /* ChatViewController+SWTableView.swift in Sources */,
@@ -977,15 +1006,18 @@
 				F400FE1A1EE89DF600DC13DD /* RDB2Channel.swift in Sources */,
 				F4D83CB01EE6E6E5003299D1 /* DB2LastMessage.swift in Sources */,
 				F4D83CD31EE73068003299D1 /* UIViewController+Extensions.swift in Sources */,
+				F40F11551EEDC9770091A825 /* ChatContentType.swift in Sources */,
 				F4D83CB71EE6ED15003299D1 /* DB2Message.swift in Sources */,
 				F4B2AD2F1EEAAEBD00B98843 /* DomainSaveChannelsUseCase.swift in Sources */,
 				F4B2AD2D1EEAAE9B00B98843 /* RealmSaveChatsUseCase.swift in Sources */,
 				F4B2AD311EEAD16300B98843 /* RealmUseCaseProvider.swift in Sources */,
 				F4D83CCF1EE72F50003299D1 /* Reusable.swift in Sources */,
+				F40F114F1EEDC4BC0091A825 /* ChatsBaseCell.swift in Sources */,
 				F4E949021EE613C9006B139B /* UIColor+Extension.swift in Sources */,
 				F41FFD241EE8205800500262 /* DB2Channels.swift in Sources */,
 				F43C339C1EEBE8C70074373C /* ActivityIndicator.swift in Sources */,
 				F400FE291EE89F6400DC13DD /* DomainConvertibleType.swift in Sources */,
+				F40F11531EEDC56F0091A825 /* ChatsViewController+CellEnums.swift in Sources */,
 				F400FE2B1EE8A05300DC13DD /* Observable+Extension.swift in Sources */,
 				F4605BA41EE5F83300ADCBBF /* AppDelegate.swift in Sources */,
 				F41FFD281EE8213F00500262 /* DomainChannelsUseCase.swift in Sources */,

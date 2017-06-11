@@ -12,6 +12,7 @@ public struct DB2Channel {
     public let users: [DB2Sender]
     public let id: Int
     public let unreadMessagesCount: Int
+    public var messageContentType : ChatsContentType = .withText
     
     public init(lastMessage: DB2LastMessage,
                 users: [DB2Sender],

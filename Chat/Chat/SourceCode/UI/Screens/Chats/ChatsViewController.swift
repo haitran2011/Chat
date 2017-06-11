@@ -100,14 +100,8 @@ class ChatsViewController: UIViewController {
         dataSource.configureCell = { dataSource, tableView, indexPath, item in
             switch dataSource[indexPath] {
             case let .MessagesSectionItem(item):
-                let cell: MessageCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
-                cell.updateFromModel(model: item)
-                cell.setBadge(count: item.unreadMessagesCount)
-                cell.selectionStyle = .none
-                self.configureLeftUtilityButtons()
-                cell.leftUtilityButtons = self.leftUtilityButtons as! [Any]
-                cell.delegate = self
-                return cell
+                 let type: ChatsContentType = item.messageContentType
+                 return type.chatCell(tableView, indexPath: indexPath, item: item, viewController: self)!
             }
         }
         

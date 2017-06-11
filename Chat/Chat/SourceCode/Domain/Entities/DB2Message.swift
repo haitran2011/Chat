@@ -12,6 +12,7 @@ public struct DB2Message {
     public let text: String
     public let isRead: Bool
     public let createDate: String
+    //public var chatContentType : ChatContentType
     
     public init(sender: DB2Sender,
                 text: String,
@@ -23,5 +24,4 @@ public struct DB2Message {
         self.isRead = isRead
         self.createDate = createDate
     }
-    
 }

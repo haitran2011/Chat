@@ -16,7 +16,7 @@ final class UserManager {
         return Static.instance
     }
     
-    var userId: Int? {
+    var userId: Int {
         get { return 1947 /* hardcoder dummy user id */ }
         set (newValue) { /*save to user defaults*/ }
     }
