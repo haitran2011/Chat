@@ -23,6 +23,7 @@
 		F400FE2B1EE8A05300DC13DD /* Observable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F400FE2A1EE8A05300DC13DD /* Observable+Extension.swift */; };
 		F400FE311EE8ACE400DC13DD /* DB2ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F400FE301EE8ACE400DC13DD /* DB2ControlView.swift */; };
 		F403D1421EEAE0E90032F08E /* NetworkSaveChannelsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403D1411EEAE0E90032F08E /* NetworkSaveChannelsUseCase.swift */; };
+		F4158C581EED80FC00B1040B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4158C571EED80FC00B1040B /* Constants.swift */; };
 		F41FFD241EE8205800500262 /* DB2Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FFD231EE8205800500262 /* DB2Channels.swift */; };
 		F41FFD261EE820A300500262 /* DB2Channels+Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FFD251EE820A300500262 /* DB2Channels+Mappable.swift */; };
 		F41FFD281EE8213F00500262 /* DomainChannelsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41FFD271EE8213F00500262 /* DomainChannelsUseCase.swift */; };
@@ -135,6 +136,7 @@
 		F400FE2A1EE8A05300DC13DD /* Observable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Extension.swift"; sourceTree = "<group>"; };
 		F400FE301EE8ACE400DC13DD /* DB2ControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB2ControlView.swift; sourceTree = "<group>"; };
 		F403D1411EEAE0E90032F08E /* NetworkSaveChannelsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSaveChannelsUseCase.swift; sourceTree = "<group>"; };
+		F4158C571EED80FC00B1040B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F41FFD231EE8205800500262 /* DB2Channels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB2Channels.swift; sourceTree = "<group>"; };
 		F41FFD251EE820A300500262 /* DB2Channels+Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DB2Channels+Mappable.swift"; sourceTree = "<group>"; };
 		F41FFD271EE8213F00500262 /* DomainChannelsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainChannelsUseCase.swift; sourceTree = "<group>"; };
@@ -418,9 +420,9 @@
 				F4777D3D1EEC6BE800D4CBF0 /* ChatViewController+SWTableView.swift */,
 				F43C33991EEBA8C30074373C /* ChatViewController+ScrollView.swift */,
 				F43C33971EEBA8780074373C /* ChatViewController+TextField.swift */,
+				F4777D3F1EEC7F7400D4CBF0 /* ChatViewController+UITableView.swift */,
 				F43CAE7F1EE87D2D00ED455D /* ChatViewController.swift */,
 				F4D83CF61EE7487A003299D1 /* ChatViewModel.swift */,
-				F4777D3F1EEC7F7400D4CBF0 /* ChatViewController+UITableView.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -572,6 +574,7 @@
 			isa = PBXGroup;
 			children = (
 				F43C33921EEBA5A90074373C /* UserManager */,
+				F4158C571EED80FC00B1040B /* Constants.swift */,
 				F4D83CA71EE6E665003299D1 /* MapperKeys.swift */,
 				F4D83CC71EE72D04003299D1 /* ViewModelType.swift */,
 			);
@@ -951,6 +954,7 @@
 				F41FFD2A1EE8219100500262 /* ChannelsUseCase.swift in Sources */,
 				F4605BDF1EE5FB1A00ADCBBF /* DB2SegmentedControl.swift in Sources */,
 				F4E04BFF1EEA9286003F5D1E /* RealmMessagesUseCase.swift in Sources */,
+				F4158C581EED80FC00B1040B /* Constants.swift in Sources */,
 				F4777D371EEC11E600D4CBF0 /* LiveChatViewController.swift in Sources */,
 				F4777D341EEC0C0F00D4CBF0 /* ChatsViewController.swift in Sources */,
 				F4D83CF31EE73944003299D1 /* DB2Channel.swift in Sources */,

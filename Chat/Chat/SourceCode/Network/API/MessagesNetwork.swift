@@ -17,6 +17,6 @@ public final class MessagesNetwork {
     }
     
     public func fetchMessages()-> Observable<DB2Messages> {
-        return network.getMessages("/1/messages")
+        return network.getMessages(Config.apiMessagesPath)
     }
 }

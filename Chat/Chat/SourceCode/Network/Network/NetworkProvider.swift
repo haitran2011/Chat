@@ -10,7 +10,7 @@ final class NetworkProvider {
     private let apiEndpoint: String
     
     public init() {
-        apiEndpoint = "http://ec2-34-211-67-136.us-west-2.compute.amazonaws.com/api/chat/channels"
+        apiEndpoint = Config.apiEndpoint
     }
     
     public func makeMessagesNetwork() -> MessagesNetwork {

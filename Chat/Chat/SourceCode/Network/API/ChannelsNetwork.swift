@@ -17,8 +17,6 @@ public final class ChannelsNetwork {
     }
     
     public func fetchChannels() -> Observable<DB2Channels> {
-        return network.getChannels("")
+        return network.getChannels(Config.apiChannelsPath)
     }
-    
-    
 }
